@@ -1,0 +1,3 @@
+The significance of the concept of Terraform Modules can't be overemphasised. As a DevOps engineer, instead of storing configurations of resources for development teams as one 'monolithic' configuration, it is best to follow a modular approach.
+
+Modularity helps break an entire infrastructure's configuration into smaller, self-contained components. Likewise, reusability in terms of templates for future projects, simplified collaboration, better help with versioning and maintenance, among so many other significant benefits of employing Terraform Modules, really make it worth employing!

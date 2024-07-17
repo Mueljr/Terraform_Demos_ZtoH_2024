@@ -10,10 +10,7 @@ After modules are created, the ultimate project file must be created (main.tf) t
 
 This way, from our root directory, we have: 
 
-TERRAFORM FILES FOR ORGANIZATION ABC 
-                -
-                -
-    main.tf     +    terraform.tfvars  +  statefile
+![ta](https://github.com/user-attachments/assets/749446b9-4b60-49c3-8988-dc5207125752)
 
 Looks good! But there is another issue. Ideally, there are three (3) environments in cloud deployment - development (dev), staging (stage), and production (prod).
 
@@ -33,16 +30,4 @@ Essentially, one ultimate project (main.tf) that can be modified by anyone, but 
 
 So, our tree turns out like this:
 
-         TERRAFORM FILES FOR ORGANIZATION ABC 
-            |                   |          |
-            |                   |          |
-main.tf + terraform.tfvars   .terraform    modules
-     + statefile                |             |    \
-                                |             |        \
-                            environment   ec2_instance  S3_buckets etc.               
-                             |   |     \
-                            |    |        \
-                           dev  stage       prod    
-                           |     |                \
-                           |     |                      \
-        statefile + dev.tfvars statefile + stage.tfvars  statefile + prod.tfvars
+![tb](https://github.com/user-attachments/assets/4a3c1186-c989-4c86-9d82-2470af47d36f)

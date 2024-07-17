@@ -11,8 +11,8 @@ After modules are created, the ultimate project file must be created (main.tf) t
 This way, from our root directory, we have: 
 
 TERRAFORM FILES FOR ORGANIZATION ABC 
-                |
-                |
+                -
+                -
     main.tf     +    terraform.tfvars  +  statefile
 
 Looks good! But there is another issue. Ideally, there are three (3) environments in cloud deployment - development (dev), staging (stage), and production (prod).
